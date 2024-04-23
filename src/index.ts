@@ -19,8 +19,10 @@ export const startServer = async () => {
   const server = createServer(yoga);
 
   if (process.env.NODE_ENV === 'development') {
+    console.log("Dev environment");
     await AppDataSource.initialize();
   } else {
+    console.log("test environment");
     await AppDataSource2.initialize();
   }
   server.listen(4000);

@@ -32,7 +32,7 @@
       "test-server": "NODE_ENV=test ts-node src/index.ts",
       "gen-schema-types": "gql2ts src/schema.graphql -o src/types/schema.d.ts",
       "typeorm": "typeorm-ts-node-commonjs",
-      "test": "NODE_ENV=test jest"
+      "test": "NODE_ENV=development jest"
    },
    "jest": {
       "transform": {
